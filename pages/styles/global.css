@@ -1,0 +1,310 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Space Comic';
+    src: url('/fonts/Space Comics.ttf');
+}
+
+@layer base {
+    * {
+        @apply transition-all duration-150 ease-in-out;
+    }
+}
+
+main {
+    background-image: url('/home/bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+}
+
+.max-width-1600 {
+    max-width: 1600px !important;
+}
+
+.dragon-floating {
+    animation: dragonfloating 3s infinite;
+}
+
+.floating {
+    animation: plffloating 3s infinite;
+}
+
+@layer components {
+    
+    /* Navigation Bar */
+    .header-info {
+        @apply w-full h-max flex relative justify-center align-middle py-2 text-white font-bold;
+        background: radial-gradient(circle, rgb(36 0 10 / 0%) -55%, rgb(242 255 191 / 52%) 32%, rgb(255 191 210 / 0%) 100%), linear-gradient(358deg, rgba(36,0,10,1) -32%, rgb(121 9 94 / 55%) -49%, rgba(255,110,152,1) 47%);
+        box-shadow: 0px 0px 3px 5px pink;
+    }
+    .close { 
+        @apply absolute flex top-0 right-2 w-min text-3xl z-50 text-white justify-center w-9;
+    }
+    .navbar {
+        @apply flex fixed top-0 h-max flex-wrap w-full z-50;
+        background-image: url('/NavigationBar.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .navbar.closed {
+        top: -40px;
+    }
+    .close.closed {
+        top: 30px;
+        background-color: #da8465;
+        border-radius: 100px;
+        box-shadow: 0px 0px 10px 1px palevioletred;
+        transform: rotate(225deg);
+    }
+    .nav-main-content {
+        @apply w-full flex justify-center container py-2 mx-auto;
+        max-width: 1240px;
+    }
+    .nav-buttons {
+        @apply flex w-max;
+    }
+    .nav-buttons .button>span {
+        @apply text-white absolute top-7 font-bold;
+        font-size: 12px;
+        font-family: 'Space Comic';
+        text-transform: uppercase;
+    }
+    .nav-buttons .button {
+        @apply justify-center items-center;
+    }
+    .main-nav {
+        @apply flex justify-center items-center w-full px-20 pb-3;
+    }
+    .main-nav>li {
+        @apply block px-2 font-bold mx-auto;
+        font-size: 14px;
+        font-family: 'Space Comic';
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 0px 3px 6px #9d0a5a;
+        /* background: -webkit-linear-gradient(#ff9ecc, #ea3499);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+    }
+    .main-nav>li:hover {
+        transform: scale(1.1);
+    }
+    .nav-logo {
+        @apply h-16 min-w-max z-50 scale-125;
+    }
+    /* Navigation Bar */
+
+    .section-container {
+        @apply flex justify-center items-center mx-auto;
+        max-width: 1440px;
+    }
+
+    
+    /* Head Banner */
+    #headbanner {
+        @apply w-full relative flex;
+        height: 100vh;
+        /* background-image: url('/bg.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center; */
+    }
+    #headbanner .flex.relative>img {
+        @apply absolute max-w-full;
+    }
+    /* Head Banner */
+
+    
+    /* Gameplay */
+    #gameplay {
+        @apply w-full h-screen relative flex flex-wrap justify-between p-20; 
+        background-image: url('/bg-gameplay.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    h1.section-header {
+        @apply w-full text-center;
+        font-size: 31px;
+        font-family: 'Space Comic';
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 0px 3px 6px #9d0a5a;
+    }
+    .gameplay-container {
+        @apply container relative flex justify-between mx-auto w-full; 
+    }
+    .gameplay-item {
+        @apply flex relative justify-center max-w-sm mx-4;
+        animation: floating 2s infinite;
+    }
+    .gameplay-content {
+        @apply absolute top-0 z-50 flex justify-center items-center flex-col pt-20 px-20;
+    }
+    .gameplay-content .image {
+        max-width: 180px;
+    }
+    .gameplay-content>h1 {
+        @apply mt-3 text-center;
+        font-size: 28px;
+        font-family: 'Space Comic';
+        text-transform: uppercase;
+        color: #76f0ac;
+        text-shadow: 1px 4px 1px #b6494d;
+        line-height: 70px;
+    }
+    .gameplay-content>p {
+        @apply mt-1 text-center text-white;
+        font-size: 14px;
+        font-family: 'Space Comic';
+        text-transform: uppercase;
+        text-shadow: 0px 1px 7px #648037;
+        line-height: 34px;
+    }
+    .gameplay-item .scroll{
+        @apply h-max;
+    }
+    @media screen and (max-width: 1200px) {
+        .gameplay-content {
+            @apply pt-14 px-14;
+        }
+        .gameplay-content .image {
+            max-width: 140px;
+        }
+        .gameplay-content>h1 {
+            font-size: 20px;
+        }
+        .gameplay-content>p {
+            font-size: 10px;
+            font-family: 'Space Comic';
+            text-transform: uppercase;
+            text-shadow: 0px 1px 7px #648037;
+            line-height: 20px;
+        }
+    }
+    /* Gameplay */
+
+    /* Dragon Types */
+    #types {
+        @apply w-full h-screen relative flex flex-wrap justify-between p-20; 
+    }
+    .types-container {
+        @apply w-3/5;
+    }
+    .dragon-types {
+        @apply flex justify-start flex-wrap;
+    }
+    .type {
+        @apply m-3;
+    }
+    .type .icon {
+        width: 170px;
+    }
+    .types-text {
+        padding: 20px;
+    }
+    .types-text>h1 {
+        font-size: 35px;
+        font-family: 'Space Comic';
+        text-transform: uppercase;
+        color: #ffd025;
+        text-shadow: 2px 6px 2px #9d0a5a;
+        line-height: 70px;
+    }
+    .types-text>p {
+        margin-top: 20px;
+        font-size: 14px;
+        font-family: 'Space Comic';
+        text-transform: uppercase;
+        color: white;
+        line-height: 40px;
+        text-shadow: 0px 0px 5px #9d0a5a;
+    }
+    /* Dragon Types */
+
+    /* Tokenomics */
+    #tokenomics {
+        @apply w-full h-screen relative flex flex-wrap justify-between p-20; 
+    }
+    /* Tokenomics */
+
+    /* Roadmap */
+    #roadmap {
+        @apply w-full h-screen p-20;
+        background: url('/roadmap.jpg');
+    }
+    /* Roadmap */
+    
+    /* Partners */
+    #partners {
+        @apply w-full h-screen p-20;
+        background: linear-gradient(0deg, #e0ded6, #e29a46);
+    }
+    /* Partners */
+
+    /* Footer */
+    footer.footer {
+        @apply pb-9;
+        background: linear-gradient(180deg, transparent 50%, #ae6b32 90%) , url(/desert.png) center;
+    }
+    .social-links {
+        @apply flex justify-center my-3 flex-wrap max-w-xl;
+    }
+    .social-links.text {
+        @apply max-w-3xl;
+    }
+    a.social-item {
+        @apply block mx-4 text-3xl text-center text-white;
+        text-shadow: 0px 0px 6px #ff4f6e;
+    }
+    a.social-item.text {
+        @apply text-2xl opacity-80 mt-0;
+    }
+    .copyright {
+        @apply text-white opacity-80;
+    }
+    /* Footer */
+}
+
+@keyframes plffloating {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    30% {
+        transform: translate(-50%, -55%);
+    }
+    50% {
+        transform: translate(-50%, -54%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }  
+}
+
+@keyframes dragonfloating {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }   
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
