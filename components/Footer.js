@@ -2,8 +2,8 @@
 export default function HeadBanner() {
     return (
         <footer className="footer flex flex-col justify-center items-center">
-            <img src="/logo.png" style={{width: '380px', maxWidth: '80vw', display: 'block', marginTop: '-100px'}} />
-            <div className="social-links text">
+            <img src="/logo.webp" style={{width: '380px', maxWidth: '80vw', display: 'block', marginTop: '-100px'}} />
+            <div className="social-links text hidden sm:flex">
                 <a className="social-item text" href="#">Gameplay</a>
                 <a className="social-item text" href="#">Tokenomics</a>
                 <a className="social-item text" href="#">Roadmap</a>

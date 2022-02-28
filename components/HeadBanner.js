@@ -1,56 +1,56 @@
 
 export default function HeadBanner() {
     return (
-        <section id="headbanner" className="flex relative">
-            <div className="flex top-0 left-0 relative justify-center items-center h-screen w-full overflow-hidden">
-                <img className="" src="/home/nd.png" style={{
+        <section id="headbanner" className="flex relative mt-10 sm:mt-0" style={{height: 'calc(100vw / 16 * 9)'}}>
+            <div className="flex top-0 left-0 relative justify-center items-center w-full overflow-hidden">
+                <img className="" src="/home/nd.webp" style={{
                     width: 'calc(38vw)',
-                    top: '50vh',
+                    top: 'calc(100vw / 16 * 9 * 0.5)',
                     left: '50vw',
                     transform: 'translate(-50%, -50%)',
                     zIndex: 8
                 }}
                 />
-                <img className="floating" src="/home/floating-2.png" style={{
+                <img className="floating" src="/home/floating-2.webp" style={{
                     width: 'calc(40vw)',
-                    top: '30vh',
+                    top: 'calc(100vw / 16 * 9 * 0.5)',
                     left: '0vw',
                     transform: 'translate(-50%, -50%)',
                     zIndex: 0
                 }} ></img>
-                <img className="floating" src="/home/floating-1.png" style={{
+                <img className="floating" src="/home/floating-1.webp" style={{
                     width: 'calc(20vw)',
-                    top: '40vh',
+                    top: 'calc(100vw / 16 * 9 * 0.4)',
                     right: '-20vw',
                     transform: 'translate(-50%, -50%)',
                     zIndex: 0
                 }} ></img>
-                <img className="" src="/home/cloud-3.png" style={{
+                <img className="" src="/home/cloud-3.webp" style={{
                     minWidth: '100vw',
                     top: 0,
                     left: 0,
                     zIndex: 0,
                 }}></img>
-                <img className="dragon-floating" src="/home/dragon-2.png" style={{
+                <img className="dragon-floating" src="/home/dragon-2.webp" style={{
                     width: 'calc(35vw)',
-                    top: '20vh',
+                    top: 'calc(100vw / 16 * 9 * 0.2)',
                     left: '5vw',
                     // transform: 'translate(-50%, -50%)',
                     zIndex: 0
                 }}
                 ></img>
-                <img className="dragon-floating" src="/home/dragon-3.png" style={{
+                <img className="dragon-floating" src="/home/dragon-3.webp" style={{
                     width: 'calc(40vw)',
-                    top: '-5vh',
+                    top: 'calc(100vw / 16 * 9 * 0.05 * -1)',
                     right: '2vw',
                     opacity: 0.9,
                     // transform: 'translate(-50%, -50%)',
                     zIndex: 0
                 }}
                 ></img>
-                <img className="dragon-floating" src="/home/dragon-4.png" style={{
+                <img className="dragon-floating" src="/home/dragon-4.webp" style={{
                     width: 'calc(40vw)',
-                    top: '30vh',
+                    top: 'calc(100vw / 16 * 9 * 0.3)',
                     right: '0vw',
                     // transform: 'translate(-50%, -50%)',
                     opacity: 0.8,
@@ -58,42 +58,42 @@ export default function HeadBanner() {
                 }}
                 ></img>
             </div>
-            <img className="" src="/home/cloud-4.png" style={{
+            <img className="" src="/home/cloud-4.webp" style={{
                 position: 'absolute',
-                minWidth: '100vw',
-                top: '35vh',
+                minWidth: '100%',
+                top: 'calc(100vw / 16 * 9 * 0.35)',
                 left: 0,
                 zIndex: 0,
             }}></img>
-            <img className="dragon-floating" src="/home/dragon-1.png" style={{
+            <img className="dragon-floating" src="/home/dragon-1.webp" style={{
                 position: 'absolute',
                 width: 'calc(80vw)',
-                top: '5vh',
+                top: 'calc(100vw / 16 * 9 * 0.05)',
                 left: '-15vw',
                 // transform: 'translate(-50%, -50%)',
                 zIndex: 10
             }}
             ></img>
-            <img className="floating" src="/home/floating-1.png" style={{
+            <img className="floating" src="/home/floating-1.webp" style={{
                 position: 'absolute',
                 width: 'calc(35vw)',
-                top: '95vh',
+                top: 'calc(100vw / 16 * 9 * 0.95)',
                 left: '50vw',
                 transform: 'translate(-50%, -50%)',
                 zIndex: 0
             }}
             ></img>
-            <img className="" src="/home/cloud-1.png" style={{
+            <img className="" src="/home/cloud-1.webp" style={{
                 position: 'absolute',
                 width: 'calc(50vw)',
-                top: '75vh',
+                top: 'calc(100vw / 16 * 9 * 0.75)',
                 left: 0,
                 zIndex: 11,
             }} ></img>
-            <img className="" src="/home/cloud-2.png" style={{
+            <img className="" src="/home/cloud-2.webp" style={{
                 position: 'absolute',
                 width: 'calc(50vw)',
-                top: '72vh',
+                top: 'calc(100vw / 16 * 9 * 0.72)',
                 right: 0,
                 zIndex: 1,
             }} ></img>
