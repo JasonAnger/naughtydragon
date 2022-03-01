@@ -136,7 +136,7 @@ main {
             width: 60vw;
             height: 100vh;
             z-index: 60;
-            background: url(/dragons/roadmap.webp);
+            background: url(/roadmap/roadmap.webp);
             background-color: #2c0f53;
             background-size: cover;
             top: 0px;
