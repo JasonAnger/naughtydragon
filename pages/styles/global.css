@@ -18,10 +18,14 @@ html {
 }
 
 main {
-    background-image: url('/home/bg.webp');
-    background-color: #a2ff9f;
+    /* background-image: url('/home/bg.webp');
+    background-color: #a2ff9f; 
+    background-size: 100%;*/
+    
+    background: url(/home/bg-2.png);
+    background-color: #070b19;
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: initial;
 }
 
@@ -136,7 +140,7 @@ main {
             width: 60vw;
             height: 100vh;
             z-index: 60;
-            background: url(/roadmap/roadmap.webp);
+            /* background: url(/roadmap/roadmap.webp); */
             background-color: #2c0f53;
             background-size: cover;
             top: 0px;
@@ -178,6 +182,15 @@ main {
         @apply w-full relative flex;
         height: 100vh;
     }
+    /* #headbanner.galaxy {
+        background: url(/home/bg-2.png);
+        background-color: #2c0f53;
+        background-size: cover;
+    } */
+    #headbanner.galaxy .cloud {
+        opacity: 0.7;
+        filter: hue-rotate(111deg);
+    }
     #headbanner .flex.relative>img {
         @apply absolute max-w-full;
     }
@@ -187,10 +200,10 @@ main {
     /* Gameplay */
     #gameplay {
         @apply w-full h-screen relative flex flex-wrap justify-between p-20; 
-        background-image: url('/bg-gameplay.webp');
+        /* background-image: url('/gameplay/bg-2.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        background-position: center;
+        background-position: center; */
     }
     h1.section-header {
         @apply w-full text-center pt-10;
@@ -289,7 +302,7 @@ main {
     /* Dragon Types */
     #types {
         @apply w-full h-screen relative flex flex-wrap justify-between p-20; 
-        background: url(/dragons/bg.webp);
+        /* background: url(/dragons/bg.webp); */
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: initial;
@@ -385,7 +398,7 @@ main {
     #roadmap {
         width: 100%;
         height: max-content;
-        background: url(/roadmap/roadmap.webp);
+        /* background: url(/roadmap/roadmap.webp); */
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: initial;
@@ -399,12 +412,35 @@ main {
         min-width: 100%;
         height: 100%;
     }
+    .roadmap-details-header {
+        font-size: 24px;
+        font-family: 'Space Comic';
+        text-transform: uppercase;
+        color: #ffffff;
+        text-shadow: 2px 5px 12px #9d0a5a;
+        line-height: 50px;
+        height: calc(20vw / 16 * 7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p.roadmap-line {
+        font-size: 14px;
+        padding: 5px calc(20vw / 16 * 2.5) 5px calc(20vw / 16 * 2.7) ;
+        font-family: 'Space Comic';
+        text-transform: uppercase;
+        color: #2a2081;
+        text-shadow: 0px 0px 9px #242424;
+        line-height: 32px;
+        height: calc(20vw / 16 * 7);
+        display: flex;
+    }
     /* Roadmap */
     
     /* Partners */
     #partners {
         @apply w-full h-screen p-20;
-        background: linear-gradient(0deg, #e0ded6, #e29a46);
+        /* background: linear-gradient(0deg, #e0ded6, #e29a46); */
     }
     @media screen and (max-width: 640px) {
         #partners {
@@ -416,7 +452,8 @@ main {
     /* Footer */
     footer.footer {
         @apply pb-9;
-        background: linear-gradient(180deg, transparent 50%, #ae6b32 90%) , url(/desert.webp) center;
+        background: linear-gradient(180deg, transparent 50%, #0a2348 90%)
+         /* , url(/desert.webp) center; */
     }
     .social-links {
         @apply flex justify-center my-3 flex-wrap max-w-xl;
@@ -429,7 +466,9 @@ main {
         text-shadow: 0px 0px 6px #ff4f6e;
     }
     a.social-item.text {
-        @apply text-2xl opacity-80 mt-0;
+        @apply text-2xl mt-0;
+        opacity: 1;
+        font-weight: 600;
     }
     .copyright {
         @apply text-white opacity-80;
@@ -437,6 +476,16 @@ main {
     /* Footer */
 }
 
+@media screen and (max-width: 1280px) {
+    .roadmap-details-header {
+        font-size: 18px;
+        line-height: 50px;
+    }
+    p.roadmap-line {
+        font-size: 10px;
+        line-height: 20px;
+    }
+}
 @media screen and (max-width: 640px) {
     #roadmap {
         padding: 8rem 0px;
@@ -449,7 +498,7 @@ main {
     }
     #roadmap .block.mx-auto.absolute {
         position: unset;
-        width: 80vw !important;
+        width: 90vw !important;
         left: unset !important;
         top: unset !important;
         transform: none !important;
@@ -462,6 +511,29 @@ main {
         left: unset !important;
         top: unset !important;
         transform: unset !important;
+    }
+    .roadmap-details-header {
+        font-size: 28px;
+        font-family: 'Space Comic';
+        text-transform: uppercase;
+        color: #ffffff;
+        text-shadow: 2px 5px 12px #9d0a5a;
+        line-height: 50px;
+        height: calc(90vw / 16 * 7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p.roadmap-line {
+        font-size: 18px;
+        padding: 5px calc(90vw / 16 * 2.5) 5px calc(89vw / 16 * 2.7) ;
+        font-family: 'Space Comic';
+        text-transform: uppercase;
+        color: #5a009f;
+        text-shadow: 0px 0px 9px #242424;
+        line-height: 32px;
+        height: calc(90vw / 16 * 9);
+        display: flex;
     }
 }
 

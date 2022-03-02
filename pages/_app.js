@@ -2,10 +2,10 @@ import './styles/global.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Head from "next/head";
 import NavigitionBar from '../components/NavigitionBar'
-import HeadBanner from '../components/HeadBanner'
+import HeadBannerGalaxy from '../components/HeadBannerGalaxy'
 import Gameplay from '../components/Gameplay'
 import DragonTypes from '../components/DragonTypes'
-import Tokenomics from '../components/Tokenomics'
+// import Tokenomics from '../components/Tokenomics'
 import Roadmap from '../components/Roadmap'
 import Partners from '../components/Partners'
 import Footer from '../components/Footer'
@@ -22,7 +22,7 @@ export default function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <NavigitionBar />
-      <HeadBanner />
+      <HeadBannerGalaxy />
       <Gameplay />
       <DragonTypes />
       {/* <Tokenomics /> */}
