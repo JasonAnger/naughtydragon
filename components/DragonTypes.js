@@ -21,7 +21,7 @@ export default function DragonTypes() {
         return(
             <div className={`dragon-item ${isShowedDragon(index+1)?'block':'hidden'}`}>
                 <div className='dragon-video w-4/5 mx-auto'>
-                    <img style={{width: '100%'}} src={`/dragons/dragon_${index+1}.png`} />
+                    <img style={{width: '100%', boxShadow: 'inset 0px 0px 23px 4px #2ea3a3eb'}} src={`/dragons/dragon_${index+1}.webp`} />
                 </div>
                 <div className='flex relative w-full'>
                     <p className="dragon-description">
