@@ -46,7 +46,7 @@ export default function DragonTypes() {
                     </div>
                     <div className='types-text'>
                         <h1>Many types of <br/>dragon to play</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
                     </div>
                 </div>
                 <div className="dragon-animation flex items-center justify-center w-2/5">
