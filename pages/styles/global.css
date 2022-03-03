@@ -297,6 +297,11 @@ main {
             /* font-size: 10px; */
         }
     }
+    @media screen and (max-width: 1024px){
+        .gameplay-item .scroll{
+            @apply h-auto;
+        }
+    }
     @media screen and (max-width: 640px){
         #gameplay {
             height: unset;
