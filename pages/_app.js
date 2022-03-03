@@ -20,6 +20,7 @@ export default function App() {
         <meta name="keywords" content="titla, meta, nextjs" />
         <meta name="author" content="Naughty Dragon Inc." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="tags" content='NaughtyDragon, Metaverse, MetaFi, P2E, BSC'/>
       </Head>
       <NavigitionBar />
       <HeadBannerGalaxy />
