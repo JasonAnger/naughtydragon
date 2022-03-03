@@ -643,6 +643,11 @@ main {
         height: unset;
         background-size: cover;
     }
+    
+    #roadmap .roadmap-header {
+        width: 60%;
+        margin-bottom: 18px;
+    }
     #roadmap .roadmap-content {
         flex-direction: column;
         position: unset;
