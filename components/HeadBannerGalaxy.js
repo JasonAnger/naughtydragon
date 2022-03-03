@@ -1,11 +1,11 @@
 
 export default function HeadBannerGalaxy() {
     return (
-        <section id="headbanner" className="galaxy flex relative mt-10 sm:mt-0" style={{height: 'calc(100vw / 16 * 9)'}}>
+        <section id="headbanner" className="galaxy flex relative pt-10 sm:pt-0" style={{height: 'calc(100vw / 16 * 9)'}}>
             <div className="flex top-0 left-0 relative justify-center items-center w-full overflow-hidden">
                 <img className="" src="/home/nd.webp" style={{
                     width: 'calc(38vw)',
-                    top: 'calc(100vw / 16 * 9 * 0.5)',
+                    top: 'calc(100vw / 16 * 9 * 0.4)',
                     left: '50vw',
                     transform: 'translate(-50%, -50%)',
                     zIndex: 8
@@ -77,7 +77,7 @@ export default function HeadBannerGalaxy() {
             <img className="floating" src="/home/floating-1.webp" style={{
                 position: 'absolute',
                 width: 'calc(35vw)',
-                top: 'calc(100vw / 16 * 9 * 0.95)',
+                top: 'calc(100vw / 16 * 9 * 0.9)',
                 left: '50vw',
                 transform: 'translate(-50%, -50%)',
                 zIndex: 0

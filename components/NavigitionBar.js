@@ -24,7 +24,7 @@ export default function NavigitionBar() {
             </div>
             <div className="nav-main-content">
                 <div className="nav-logo">
-                    <img className="h-full" src="text.png"></img>
+                    <img className="h-full" style={{filter: 'drop-shadow(0px 2px 5px #fff)'}} src="logo-new.webp"></img>
                 </div>
                 <ul className={`main-nav ${isOpen?' active':''}`}>
                     <div onClick={() => setIsOpen(false)} className="clickToClose block lg:hidden"></div>
@@ -32,8 +32,12 @@ export default function NavigitionBar() {
                     <li onClick={() => setIsOpen(false)} ><a href="#tokenomics">Tokenomics</a></li>
                     <li onClick={() => setIsOpen(false)} ><a href="#roadmap">Roadmap</a></li>
                     <li onClick={() => setIsOpen(false)} ><a href="#partners">Partners</a></li>
+                    <a className="button mkt flex lg:hidden relative animate-glow cursor-pointer min-w-max hover:scale-105">
+                        <span>Marketplace</span>
+                        <img className="max-h-20" src="btn.webp"></img>
+                    </a>
                     <a className="button flex lg:hidden relative animate-glow cursor-pointer min-w-max hover:scale-105">
-                        <span>Play Game</span>
+                        <span>Launch App</span>
                         <img className="max-h-20" src="btn.webp"></img>
                     </a>
                 </ul>
@@ -41,8 +45,12 @@ export default function NavigitionBar() {
                     <img className="max-h-20" src="burger.webp"></img>
                 </div>
                 <div className="nav-buttons hidden lg:flex">
+                    <a className="button mkt hidden lg:flex relative animate-glow cursor-pointer min-w-max hover:scale-105">
+                        <span>Marketplace</span>
+                        <img className="max-h-20" src="btn.webp"></img>
+                    </a>
                     <a className="button hidden lg:flex relative animate-glow cursor-pointer min-w-max hover:scale-105">
-                        <span>Play Game</span>
+                        <span>Launch App</span>
                         <img className="max-h-20" src="btn.webp"></img>
                     </a>
                 </div>
