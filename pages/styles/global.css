@@ -22,7 +22,7 @@ main {
     background-color: #a2ff9f; 
     background-size: 100%;*/
     
-    background: url(/home/bg-2.png);
+    background: url(/bg-2.webp);
     background-color: #070b19;
     background-size: 100%;
     background-repeat: repeat;
@@ -126,7 +126,12 @@ main {
     }
     @media screen and (max-width: 1024px){
         .navbar {
-            background-size: contain;
+            background-size: cover;
+        }
+        .nav-logo {
+            @apply z-50 scale-90;
+            margin-top: -10px;
+            margin-bottom: 10px;
         }
         .close {
             position: absolute;
@@ -219,10 +224,6 @@ main {
     /* Gameplay */
     #gameplay {
         @apply w-full h-screen relative flex flex-wrap justify-between p-20; 
-        /* background-image: url('/gameplay/bg-2.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-position: center; */
     }
     h1.section-header {
         @apply w-full text-center pt-10;
@@ -260,7 +261,7 @@ main {
         font-size: 14px;
         font-family: 'Space Comic';
         text-transform: uppercase;
-        text-shadow: 0px 1px 7px #648037;
+        text-shadow: 0px 2px 9px #1cb500;
         line-height: 34px;
     }
     .gameplay-item .scroll{
@@ -380,6 +381,7 @@ main {
         margin-bottom: 25px;
         max-width: 80vw;
         max-height: 80vw;
+        min-height: calc(70vw);
         overflow: hidden;
         background-image: black;
         border-radius: 30px;
@@ -408,6 +410,7 @@ main {
         }
         .dragon-video {
             height: calc(40%);
+            min-height: calc(40%);
         }
     }
     @media screen and (max-width: 1280px) {
@@ -485,7 +488,7 @@ main {
         padding: 100px 0px;
     }
     #roadmap .roadmap-header {
-        @apply w-3/5 flex mx-auto;
+        @apply w-1/4 flex mx-auto;
     }
     #roadmap .roadmap-content {
         @apply flex relative;
