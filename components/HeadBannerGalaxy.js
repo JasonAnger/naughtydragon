@@ -1,9 +1,9 @@
 
 export default function HeadBannerGalaxy() {
     return (
-        <section id="headbanner" className="galaxy flex relative pt-20 sm:pt-0" style={{height: 'calc(100vw / 16 * 9 + 5rem)'}}>
+        <section id="headbanner" className="galaxy flex relative pt-20 sm:pt-0" style={{ height: 'calc(100vw / 16 * 9 + 5rem)' }}>
             <div className="flex top-0 left-0 relative justify-center items-center w-full overflow-hidden">
-                <img className="" src="/home/nd.webp" style={{
+                <img className="home-logo" src="/home/nd.webp" style={{
                     width: 'calc(38vw)',
                     top: 'calc(100vw / 16 * 9 * 0.4)',
                     left: '50vw',
@@ -25,12 +25,6 @@ export default function HeadBannerGalaxy() {
                     transform: 'translate(-50%, -50%)',
                     zIndex: 0
                 }} ></img>
-                <img className="cloud" src="/home/cloud-3.webp" style={{
-                    minWidth: '100vw',
-                    top: 0,
-                    left: 0,
-                    zIndex: 0,
-                }}></img>
                 <img className="dragon-floating" src="/home/dragon-2.webp" style={{
                     width: 'calc(35vw)',
                     top: 'calc(100vw / 16 * 9 * 0.2)',
@@ -58,6 +52,13 @@ export default function HeadBannerGalaxy() {
                 }}
                 ></img>
             </div>
+            <img className="cloud" src="/home/cloud-3.webp" style={{
+                position: 'absolute',
+                minWidth: '100vw',
+                top: 0,
+                left: 0,
+                zIndex: 0,
+            }}></img>
             <img className="cloud" src="/home/cloud-4.webp" style={{
                 position: 'absolute',
                 minWidth: '100%',

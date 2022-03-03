@@ -205,6 +205,11 @@ main {
     #headbanner .flex.relative>img {
         @apply absolute max-w-full;
     }
+    @media screen and (max-width: 1024px) {
+        #headbanner .home-logo {
+            width: calc(50vw) !important;
+        }
+    }
     /* Head Banner */
 
     
