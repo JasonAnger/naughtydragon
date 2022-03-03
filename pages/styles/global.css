@@ -206,6 +206,9 @@ main {
         @apply absolute max-w-full;
     }
     @media screen and (max-width: 1024px) {
+        #headbanner.galaxy .cloud {
+            opacity: 0.5;
+        }
         #headbanner .home-logo {
             width: calc(50vw) !important;
         }
