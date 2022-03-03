@@ -10,8 +10,8 @@ export default function Gameplay() {
                             <div className="image">
                                 <img src="/gameplay/gameplay-3.webp" />
                             </div>
-                            <h1>Feed</h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing</p>
+                            <h1>Feeding</h1>
+                            <p>From Level 1 to Level 15 to increase the Dragon Indicators</p>
                         </div>
                         <img className="scroll drop-shadow-md" src="/scroll.webp" />
                     </div>
@@ -20,8 +20,8 @@ export default function Gameplay() {
                             <div className="image">
                                 <img src="/gameplay/gameplay-2.webp" />
                             </div>
-                            <h1>Breed</h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing</p>
+                            <h1>Breeding</h1>
+                            <p>Cross-Breeding among Dragon Breeds</p>
                         </div>
                         <img className="scroll drop-shadow-md" src="/scroll.webp" />
                     </div>
@@ -30,8 +30,8 @@ export default function Gameplay() {
                             <div className="image">
                                 <img src="/gameplay/gameplay-1.webp" />
                             </div>
-                            <h1>Battle</h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing</p>
+                            <h1>PVP</h1>
+                            <p>Defeat the enemies and get the reward</p>
                         </div>
                         <img className="scroll drop-shadow-md" src="/scroll.webp" />
                     </div>

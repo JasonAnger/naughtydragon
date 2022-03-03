@@ -11,6 +11,27 @@ export default function DragonTypes() {
         if(usedDragon === dragon) return true;
         return false
     }
+    let dragons = ["The Metal Dragon has the ability to emit lightning to defeat the opponent. Immense assault power and plentiful blood give them benefits during the fighting. However, the attack speed is sometimes quite sluggish, probably being a disadvantage in case the opponent is having a good amount of blood and still plateaued after the attacks of the Metal dragons.",
+    "The Wood Dragon has excellent safeguard capacity, and can endure many adversaries' assaults. Yet, the attack power is additionally not so strong and the speed isn't high, so now and then it actually has its own disadvantages. With the capacity to splash haze, The Wood Dragon can wallow and disorient opponents then increase the miss rate in the opponent's attack.",
+    "The Water Dragon is such a type of dragon with balanced stats that can both attack and defend well. In case they encounter dragons that are incompatible, those stats will be significantly controlled causing a specific disadvantage.",
+    "The Fire Dragon has superior attack stats,  easy to injure opponents, along with good defense, and will also create an advantage for themselves if they encounter dragons that are incompatible with them.",
+    "The Earth Dragon has a lightning-quick attack speed since that variable compensates for his low attack power. Assuming the player controls the dragon well, it will likewise make many advantages while battling with the opponents.",
+    "The Cyber Dragon is a strong dragon in every respect, a formidable opponent for all other players. When there is an opportunity to attack, the Cyber dragon will take full advantages and create an advantage for himself."]
+    .map((item, index) => {
+        return(
+            <div className={`dragon-item ${isShowedDragon(index+1)?'block':'hidden'}`}>
+                <div className='dragon-video w-4/5 mx-auto'>
+                    <img style={{width: '100%'}} src={`/dragons/dragon_${index+1}.png`} />
+                </div>
+                <div className='flex relative w-full'>
+                    <p className="dragon-description">
+                        {item}
+                    </p>
+                    <img style={{width: '100%', filter: 'hue-rotate(45deg) drop-shadow(2px 4px 20px black)', zIndex: 0}} src={`/dragons/frame.webp`} />
+                </div>
+            </div>
+        )
+    })
     return (
         <section id="types">
             <div className="section-container">
@@ -29,12 +50,7 @@ export default function DragonTypes() {
                     </div>
                 </div>
                 <div className="dragon-animation flex items-center justify-center w-2/5">
-                    <img className={`${isShowedDragon(1)?'block':'hidden'}`} style={{width: '100%'}} src='/dragons/dragon_1.png' />
-                    <img className={`${isShowedDragon(2)?'block':'hidden'}`} style={{width: '100%'}} src='/dragons/dragon_2.png' />
-                    <img className={`${isShowedDragon(3)?'block':'hidden'}`} style={{width: '100%'}} src='/dragons/dragon_3.png' />
-                    <img className={`${isShowedDragon(4)?'block':'hidden'}`} style={{width: '100%'}} src='/dragons/dragon_4.png' />
-                    <img className={`${isShowedDragon(5)?'block':'hidden'}`} style={{width: '100%'}} src='/dragons/dragon_5.png' />
-                    <img className={`${isShowedDragon(6)?'block':'hidden'}`} style={{width: '100%'}} src='/dragons/dragon_6.png' />
+                    {dragons}
                 </div>
             </div>
         </section>
