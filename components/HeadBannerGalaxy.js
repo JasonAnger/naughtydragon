@@ -54,7 +54,7 @@ export default function HeadBannerGalaxy() {
             </div>
             <img className="cloud" src="/home/cloud-3.webp" style={{
                 position: 'absolute',
-                minWidth: '100vw',
+                minWidth: '100%',
                 top: 0,
                 left: 0,
                 zIndex: 0,

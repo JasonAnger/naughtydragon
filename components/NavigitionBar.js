@@ -16,10 +16,10 @@ export default function NavigitionBar() {
             <div className="header-info">
                 <p>
                     <span className='hidden lg:inline-block'>Official Naughty Dragon </span>
-                    <span className='inline-block'>Token Contract</span>
-                    <span className='hidden lg:inline-block'>(BEP-20)</span>
+                    <span className='inline-block ml-2'>Token Contract</span>
+                    <span className='hidden lg:inline-block ml-2'>(BEP-20)</span>
                     <span className='inline-block'>: </span>
-                    <a href="https://bscscan.com/address/0xE3233fdb23F1c27aB37Bd66A19a1f1762fCf5f3F" rel="noreferrer" target="_blank" className="contract">0xE3233fdb23F1c27aB37Bd66A19a1f1762fCf5f3F</a>
+                    <a href="https://bscscan.com/address/0xE3233fdb23F1c27aB37Bd66A19a1f1762fCf5f3F" rel="noreferrer" target="_blank" className="contract">0xE3233<span className='hidden lg:inline-block'>fdb23F1c27aB37Bd66A19a1f1762</span><span className='inline-block lg:hidden'>...</span>fCf5f3F</a>
                 </p>
             </div>
             <div className="nav-main-content">

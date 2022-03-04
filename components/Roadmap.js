@@ -4,8 +4,8 @@ export default function Roadmap() {
         <section id="roadmap">
             <img className="roadmap-header" src="/roadmap/text.webp" />
             <div className="roadmap-content">
-                <img className="block absolute hidden sm:block" style={{width: '13%', left: '10%', transform: 'translate(-50%,-50%)'}} src="/roadmap/start.webp"/>
-                <img className="w-4/5 block mx-auto hidden sm:block" src="/roadmap/guideline.webp" />
+                <img className="block absolute hidden sm:block z-10" style={{width: '13%', left: '10%', transform: 'translate(-50%,-50%)'}} src="/roadmap/start.webp"/>
+                <img className="w-4/5 block mx-auto hidden sm:block z-0" style={{filter: 'drop-shadow(2px 4px 6px #00000050)'}} src="/roadmap/guideline.webp" />
                 <div className="roadmap-item w-4/5 block mx-auto absolute" style={{width: '22%', left: '30%', top: '8%', transform: 'translateX(-50%)'}} >
                     <div className="roadmap-details flex relative flex-col">
                         <div className="roadmap-details-header z-20">Q4/2021</div>

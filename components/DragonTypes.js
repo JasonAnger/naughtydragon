@@ -27,7 +27,7 @@ export default function DragonTypes() {
                     <p className="dragon-description">
                         {item}
                     </p>
-                    <img style={{width: '100%', filter: 'hue-rotate(45deg) drop-shadow(2px 4px 20px black)', zIndex: 0}} src={`/dragons/frame.webp`} />
+                    <img style={{width: '100%', filter: 'hue-rotate(333deg) drop-shadow(2px 4px 20px #fff)', zIndex: 0}} src={`/dragons/frame.webp`} />
                 </div>
             </div>
         )

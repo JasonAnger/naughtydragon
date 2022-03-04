@@ -5,7 +5,7 @@ export default function Partners() {
     const partnerList =  urlPartner.map((item) => <div className="item"><img className="" src={item} /></div>)
     return (
         <section id="partners">
-            <h1 className="section-header text-white">Partners</h1>
+            <h1 className="section-header">Partners</h1>
             <div className="partner-list">
                 {partnerList}
             </div>
