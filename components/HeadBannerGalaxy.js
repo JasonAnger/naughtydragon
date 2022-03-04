@@ -25,7 +25,7 @@ export default function HeadBannerGalaxy() {
                     transform: 'translate(-50%, -50%)',
                     zIndex: 0
                 }} ></img>
-                <img className="dragon-floating" src="/home/dragon-2.webp" style={{
+                <img className="dragon-floating red" src="/home/dragon-2.webp" style={{
                     width: 'calc(35vw)',
                     top: 'calc(100vw / 16 * 9 * 0.2)',
                     left: '5vw',

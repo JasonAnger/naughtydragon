@@ -11,8 +11,8 @@ export default function NavigitionBar() {
         setIsOpen(!isOpen)
     }
     return (
-        <section className={"navbar"+`${isClose?' closed':''}`}>
-            <div onClick={onClickClose} className={"close"+`${isClose?' closed':''}`}><i className="bi bi-x"></i></div>
+        <section className={"navbar closed"+`${isClose?' closed':''}`}>
+            {/* <div onClick={onClickClose} className={"close"+`${isClose?' closed':''}`}><i className="bi bi-x"></i></div> */}
             <div className="header-info">
                 <p>
                     <span className='hidden lg:inline-block'>Official Naughty Dragon </span>

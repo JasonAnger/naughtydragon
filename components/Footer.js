@@ -16,7 +16,7 @@ export default function HeadBanner() {
                 <a className="social-item" href="#"><i class="bi bi-facebook"></i></a> */}
                 <a className="social-item" href="https://www.youtube.com/channel/UCaZLtxtOR0jhweKYlNlt-5w"><i class="bi bi-youtube"></i></a>
                 <a className="social-item" href="https://t.me/Naughty_DRG"><i class="bi bi-telegram"></i></a>
-                <a className="social-item" href="contact@naughtydragon.io"><i class="bi bi-mailbox2"></i></a>
+                <a className="social-item" href="mailto:contact@naughtydragon.io"><i class="bi bi-mailbox2"></i></a>
             </div>
             <p className="copyright">Copyright © 2021 Naughty Dragon</p>
         </footer>
