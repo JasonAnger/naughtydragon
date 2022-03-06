@@ -29,7 +29,7 @@ export default function NavigitionBar() {
                 <ul className={`main-nav ${isOpen?' active':''}`}>
                     <div onClick={() => setIsOpen(false)} className="clickToClose block lg:hidden"></div>
                     <li onClick={() => setIsOpen(false)} ><a href="#gameplay">Gameplay</a></li>
-                    <li onClick={() => setIsOpen(false)} ><a href="#tokenomics">Tokenomics</a></li>
+                    <li onClick={() => setIsOpen(false)} ><a href="/Tokenomics.pdf">Tokenomics</a></li>
                     <li onClick={() => setIsOpen(false)} ><a href="#roadmap">Roadmap</a></li>
                     <li onClick={() => setIsOpen(false)} ><a href="#partners">Partners</a></li>
                     <a className="button mkt flex lg:hidden relative animate-glow cursor-pointer min-w-max hover:scale-105">

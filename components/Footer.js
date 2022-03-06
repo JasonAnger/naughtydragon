@@ -5,7 +5,7 @@ export default function HeadBanner() {
             <img src="/logo.webp" style={{width: '380px', maxWidth: '80vw', display: 'block', marginTop: '-100px', filter: 'drop-shadow(2px 4px 50px #fff)'}} />
             <div className="social-links text hidden sm:flex">
                 <a className="social-item text" href="#gameplay">Gameplay</a>
-                <a className="social-item text" href="https://docs.naughtydragon.io/naughty-dragon-token/tokenomics">Tokenomics</a>
+                <a className="social-item text" href="/Tokenomics.pdf">Tokenomics</a>
                 <a className="social-item text" href="#roadmap">Roadmap</a>
                 <a className="social-item text" href="https://docs.naughtydragon.io/">Docs</a>
                 <a className="social-item text" href="https://docs.naughtydragon.io/">FAQs</a>
