@@ -4,11 +4,13 @@
 
 @font-face {
     font-family: 'Space Comic';
-    src: url('/fonts/Space Comics.ttf');
+    src: url('/fonts/Space Comics.woff2') format("woff2"),
+    url('/fonts/Space Comics.ttf') format("truetype");
 }
 @font-face {
     font-family: 'Heavitas';
-    src: url('/fonts/Heavitas.ttf');
+    src: url('/fonts/Heavitas.woff2') format("woff2"),
+    url('/fonts/Heavitas.ttf') format("truetype");
 }
 
 @layer base {
@@ -639,6 +641,9 @@ h1.section-header{
         @apply pb-9;
         background: linear-gradient(180deg, transparent 50%, #0a2348 90%)
          /* , url(/desert.webp) center; */
+    }
+    .footer * {
+        overflow: visible !important;
     }
     .social-links {
         @apply flex justify-center my-3 flex-wrap max-w-xl;

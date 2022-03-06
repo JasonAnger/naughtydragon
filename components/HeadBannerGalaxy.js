@@ -33,7 +33,7 @@ export default function HeadBannerGalaxy() {
                     zIndex: 0
                 }}
                 ></img>
-                <img className="dragon-floating" src="/home/dragon-3.webp" style={{
+                <img className="dragon-floating brown" src="/home/dragon-3.webp" style={{
                     width: 'calc(40vw)',
                     top: 'calc(100vw / 16 * 9 * 0.05 * -1)',
                     right: '2vw',
