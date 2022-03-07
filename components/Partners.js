@@ -9,6 +9,10 @@ export default function Partners() {
             <div className="partner-list">
                 {partnerList}
             </div>
+            <h1 className="section-header">Team</h1>
+            <div className="partner-list justify-center">
+                <div className="galaxy item"><img className="" src='/galaxy_studio.webp' /></div>
+            </div>
         </section>
     )
 }
