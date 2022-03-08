@@ -55,7 +55,7 @@ export default function App() {
       </Head>
       <NavigitionBar />
       <div className={`pointer fixed bottom-3 right-3 sm:bottom-6 sm:right-6 z-50 ${scrollPosition>100?'flex':'hidden'}`} onClick={() => { window.scrollTo(0,0); }}>
-        <img style={{width: '80px', height: 'auto'}} src='/totop.png'/>
+        <img style={{width: '80px', height: '80px'}} src='/totop.png'/>
       </div>
       <HeadBannerGalaxy />
       <Gameplay />
