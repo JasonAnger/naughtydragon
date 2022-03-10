@@ -136,6 +136,39 @@ h1.section-header{
     .main-nav>li:hover {
         transform: scale(1.1);
     }
+    li.mini-menu {
+        display: flex;
+        position: relative;
+        pointer: cursor;
+    }
+    li.mini-menu span svg {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        margin: -10px 8px 0px 8px;
+        filter: drop-shadow(0px 3px 3px #9d0a5a);
+    }
+    li.mini-menu>ul.hover-display {
+        display: none;
+        position: absolute;
+        top: 24px;
+        padding: 20px 20px 6px 20px;
+        transform: translate(calc(-50% + 40px), 0px);
+        background-color: #a82d1b80;
+        border-radius: 20px;
+    }
+    li.mini-menu:hover span svg {
+        transform: rotate(180deg)
+    }
+    li.mini-menu:hover>ul.hover-display {
+        display: block;
+    }
+    .hover-display li {
+        display: block;
+        text-align: center;
+        height: max-content;
+        margin: 0px 0px 25px;
+    }
     .nav-logo {
         @apply h-16 min-w-max z-50 scale-125;
     }
@@ -194,6 +227,21 @@ h1.section-header{
             margin-left: auto;
             margin-right: 0px;
             margin-bottom: 8px;
+        }
+        li.mini-menu span {
+            display: none;
+        }
+        li.mini-menu>ul.hover-display {
+            display: block;
+            position: unset;
+            top: unset;
+            padding: unset;
+            transform: unset;
+            background-color: unset;
+            border-radius: unset;
+        }
+        .hover-display li {
+            text-align: right;
         }
         .clickToClose {
             position: absolute;
@@ -670,6 +718,15 @@ h1.section-header{
     }
     .copyright {
         @apply text-white mt-3;
+    }
+    @media screen and (max-width: 641px) {
+        .footer .social-links .text {
+            margin: 4px 10px;
+        }
+        .footer .social-links .text {
+            font-size: 1.1rem;
+            line-height: 1.3rem;
+        }
     }
     /* Footer */
 }

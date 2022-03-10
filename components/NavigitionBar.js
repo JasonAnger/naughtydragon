@@ -11,7 +11,7 @@ export default function NavigitionBar() {
         setIsOpen(!isOpen)
     }
     return (
-        <section className={"navbar closed"+`${isClose?' closed':''}`}>
+        <section className={"navbar closed" + `${isClose ? ' closed' : ''}`}>
             {/* <div onClick={onClickClose} className={"close"+`${isClose?' closed':''}`}><i className="bi bi-x"></i></div> */}
             <div className="header-info">
                 <p>
@@ -24,14 +24,27 @@ export default function NavigitionBar() {
             </div>
             <div className="nav-main-content">
                 <div className="nav-logo">
-                    <img className="h-full" style={{filter: 'drop-shadow(0px 2px 5px #fff)'}} src="logo-new.webp"></img>
+                    <img className="h-full" style={{ filter: 'drop-shadow(0px 2px 5px #fff)' }} src="logo-new.webp"></img>
                 </div>
-                <ul className={`main-nav ${isOpen?' active':''}`}>
+                <ul className={`main-nav ${isOpen ? ' active' : ''}`}>
                     <div onClick={() => setIsOpen(false)} className="clickToClose block lg:hidden"></div>
                     <li onClick={() => setIsOpen(false)} ><a href="#gameplay">Gameplay</a></li>
-                    <li onClick={() => setIsOpen(false)} ><a target="_blank" href="/Tokenomics.pdf">Tokenomics</a></li>
                     <li onClick={() => setIsOpen(false)} ><a href="#roadmap">Roadmap</a></li>
                     <li onClick={() => setIsOpen(false)} ><a href="#partners">Partners</a></li>
+                    <li className="mini-menu" onClick={() => setIsOpen(false)} >
+                        <span>Docs
+                            <svg viewBox="0 -256 1792 1792">
+                                <g transform="matrix(1,0,0,-1,68.338983,1133.5593)" id="g3003">
+                                    <path fill="#ffffff" d="m 1611,832 q 0,-53 -37,-90 L 923,91 Q 885,53 832,53 778,53 742,91 L 91,742 q -38,36 -38,90 0,53 38,91 l 74,75 q 39,37 91,37 53,0 90,-37 l 486,-486 486,486 q 37,37 90,37 52,0 91,-37 l 75,-75 q 37,-39 37,-91 z" id="path3005"  />
+                                </g>
+                            </svg>
+                        </span>
+                        <ul className="hover-display">
+                            <li><a target="_blank" href="/Tokenomics.pdf">Tokenomics</a></li>
+                            <li><a target="_blank" href="/Pitchdeck.pdf">Pitchdeck</a></li>
+                            <li><a target="_blank" href="https://docs.naughtydragon.io/">Documentation</a></li>
+                        </ul>
+                    </li>
                     <a className="button mkt flex lg:hidden relative animate-glow cursor-pointer min-w-max hover:scale-105">
                         <span>Marketplace</span>
                         <img className="max-h-20" src="btn.webp"></img>
