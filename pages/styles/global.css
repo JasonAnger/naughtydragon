@@ -267,7 +267,7 @@ h1.section-header{
     
     /* Gameplay */
     #gameplay {
-        @apply w-full h-screen relative flex flex-wrap justify-between p-20; 
+        @apply w-full h-max relative flex flex-wrap justify-between p-20; 
     }
     h1.section-header {
         @apply w-full text-center pt-10;
