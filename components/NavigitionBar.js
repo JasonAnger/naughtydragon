@@ -19,7 +19,7 @@ export default function NavigitionBar() {
                     <span className='inline-block ml-2'>Token Contract</span>
                     <span className='hidden lg:inline-block ml-2'>(BEP-20)</span>
                     <span className='inline-block'>: </span>
-                    <a href="https://bscscan.com/address/0xE3233fdb23F1c27aB37Bd66A19a1f1762fCf5f3F" rel="noreferrer" target="_blank" className="contract">0xE3233<span className='hidden lg:inline-block'>fdb23F1c27aB37Bd66A19a1f1762</span><span className='inline-block lg:hidden'>...</span>fCf5f3F</a>
+                    <a href="https://bscscan.com/address/0x026e50bc6A2c76447A33bAc90f864d61C94Eb5f0" rel="noreferrer" target="_blank" className="contract">0x026e<span className='hidden lg:inline-block'>50bc6A2c76447A33bAc90f864d61C</span><span className='inline-block lg:hidden'>...</span>94Eb5f0</a>
                 </p>
             </div>
             <div className="nav-main-content">

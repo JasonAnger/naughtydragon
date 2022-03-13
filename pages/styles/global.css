@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'Space Comic';
-    src: url('/fonts/Space Comics.woff2') format("woff2"),
-    url('/fonts/Space Comics.ttf') format("truetype");
-}
-@font-face {
-    font-family: 'Heavitas';
-    src: url('/fonts/Heavitas.woff2') format("woff2"),
-    url('/fonts/Heavitas.ttf') format("truetype");
-}
-
 @layer base {
     * {
         @apply transition-all duration-150 ease-in-out;
