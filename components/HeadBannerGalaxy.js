@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 export default function HeadBannerGalaxy() {
     return (
         <section id="headbanner" className="galaxy flex relative mt-10 pt-20 sm:pt-0 sm:mt-0" style={{ height: 'calc(100vw / 16 * 9 + 5rem)' }}>

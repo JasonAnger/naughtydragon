@@ -1,4 +1,3 @@
-
 export default function Partners() {
     const urlPartner = ['/partners/logo-01.webp','/partners/logo-02.webp','/partners/logo-03.webp','/partners/logo-04.webp',
     '/partners/logo-05.webp','/partners/logo-06.webp','/partners/logo-07.webp','/partners/logo-08.webp']
