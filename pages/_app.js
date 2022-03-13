@@ -1,5 +1,3 @@
-import './styles/global.css'
-import 'bootstrap-icons/font/bootstrap-icons.css';
 import Head from "next/head";
 import Image from 'next/image';
 import NavigitionBar from '../components/NavigitionBar'
@@ -11,8 +9,12 @@ import Roadmap from '../components/Roadmap'
 import Partners from '../components/Partners'
 import Footer from '../components/Footer'
 import React, { useState, useEffect } from 'react';
+
+import './styles/global.css'
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import './styles/fonts.css'
 
+export const config = { amp: true }
 
 export default function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
