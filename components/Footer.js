@@ -2,7 +2,7 @@
 export default function HeadBanner() {
     return (
         <footer className="footer flex flex-col justify-center items-center">
-            <img src="/logo.webp" style={{width: '380px', maxWidth: '80vw', display: 'block', marginTop: '-100px', filter: 'drop-shadow(2px 4px 50px #fff)'}} />
+            <img alt="Naughty Dragon logo" src="/logo.webp" style={{width: '380px', maxWidth: '80vw', display: 'block', marginTop: '-100px', filter: 'drop-shadow(2px 4px 50px #fff)'}} />
             <div className="social-links text flex sm:flex">
                 <a className="social-item text" href="#gameplay">Gameplay</a>
                 <a className="social-item text" href="#roadmap">Roadmap</a>

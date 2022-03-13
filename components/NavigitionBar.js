@@ -24,7 +24,7 @@ export default function NavigitionBar() {
             </div>
             <div className="nav-main-content">
                 <div className="nav-logo">
-                    <img className="h-full" style={{ filter: 'drop-shadow(0px 2px 5px #fff)' }} src="logo-new.webp"></img>
+                    <img alt={`Naughty Dragon logo`} className="h-full" style={{ filter: 'drop-shadow(0px 2px 5px #fff)' }} src="logo-new.webp"></img>
                 </div>
                 <ul className={`main-nav ${isOpen ? ' active' : ''}`}>
                     <div onClick={() => setIsOpen(false)} className="clickToClose block lg:hidden"></div>
@@ -47,24 +47,24 @@ export default function NavigitionBar() {
                     </li>
                     <a className="button mkt flex lg:hidden relative animate-glow cursor-pointer min-w-max hover:scale-105">
                         <span>Marketplace</span>
-                        <img className="max-h-20" src="btn.webp"></img>
+                        <img alt={`Naughty Dragon button`} className="max-h-20" src="btn.webp"></img>
                     </a>
                     <a className="button flex lg:hidden relative animate-glow cursor-pointer min-w-max hover:scale-105">
                         <span>Launch App</span>
-                        <img className="max-h-20" src="btn.webp"></img>
+                        <img alt={`Naughty Dragon button`} className="max-h-20" src="btn.webp"></img>
                     </a>
                 </ul>
                 <div onClick={openMainNav} className="nav-buttons absolute top-9 right-3 flex lg:hidden">
-                    <img className="max-h-20" src="burger.webp"></img>
+                    <img alt={`Naughty Dragon button`} className="max-h-20" src="burger.webp"></img>
                 </div>
                 <div className="nav-buttons hidden lg:flex">
                     <a className="button mkt hidden lg:flex relative animate-glow cursor-pointer min-w-max hover:scale-105">
                         <span>Marketplace</span>
-                        <img className="max-h-20" src="btn.webp"></img>
+                        <img alt={`Naughty Dragon button`} className="max-h-20" src="btn.webp"></img>
                     </a>
                     <a className="button hidden lg:flex relative animate-glow cursor-pointer min-w-max hover:scale-105">
                         <span>Launch App</span>
-                        <img className="max-h-20" src="btn.webp"></img>
+                        <img alt={`Naughty Dragon button`} className="max-h-20" src="btn.webp"></img>
                     </a>
                 </div>
             </div>

@@ -24,7 +24,7 @@ export default function Type(props) {
     }
     return (
         <div onClick={() => props.chooseDragon(props.index) } style={{'filter': `${shadowColor}`}} className="type">
-            <img className="icon" src={`/dragons/type_${props.index}.webp`} />
+            <img alt={`Naughty Dragon ${props.index}`} className="icon" src={`/dragons/type_${props.index}.webp`} />
         </div>
     )
 }
