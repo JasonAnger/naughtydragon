@@ -45,6 +45,56 @@ h1.section-header{
     -webkit-text-fill-color: transparent;
     text-shadow: none !important;
 }
+.cloud-1 {
+    position: absolute;
+    width: calc(50vw);
+    top: calc(100vw / 16 * 9 * 0.75);
+    left: 0;
+    zIndex: 11;
+}
+.cloud-2 {
+    position: absolute;
+    width: calc(50vw);
+    top: calc(100vw / 16 * 9 * 0.72);
+    right: 0;
+    z-index: 1;
+}
+.cloud-3 {
+    position: absolute;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.cloud-4 {
+    position: absolute;
+    min-width: 100%;
+    top: calc(100vw / 16 * 9 * 0.35);
+    left: 0;
+    z-index: 0;
+}
+.floating-1 {
+    position: absolute;
+    width: calc(35vw);
+    top: calc(100vw / 16 * 9 * 0.9);
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 0
+}
+.dragon-1 {
+    position: absolute;
+    width: calc(80vw);
+    top: calc(100vw / 16 * 9 * 0.05);
+    left: -15vw;
+    z-index: 10;
+}
+.home-logo {
+    width: calc(38vw);
+    top: calc(100vw / 16 * 9 * 0.4);
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 8;
+}
 
 @media screen and (max-width: 1024px){
     h1.section-header {

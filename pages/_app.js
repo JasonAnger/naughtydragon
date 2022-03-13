@@ -14,7 +14,7 @@ import './styles/global.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './styles/fonts.css'
 
-export const config = { amp: true }
+// export const config = { amp: true }
 
 export default function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
