@@ -7,6 +7,7 @@ import DragonTypes from '../components/DragonTypes'
 import Roadmap from '../components/Roadmap'
 import Partners from '../components/Partners'
 import Footer from '../components/Footer'
+import Marquee from "react-fast-marquee"
 import React, { useState, useEffect } from 'react';
 
 import './styles/global.css'
@@ -67,6 +68,10 @@ export default function App() {
       {/* <Tokenomics /> */}
       <Roadmap />
       <Partners />
+      <Marquee>
+        Naughty Dragon doesn't provide user supports for residents in the following countries:  Algeria, Bahrain, Djibouti, Egypt, Iran, Iraq, Viet Nam, Zimbabwe, Angola.
+      </Marquee>
+      <div className="marquee-bg"></div>
       <Footer />
     </main>
   )
