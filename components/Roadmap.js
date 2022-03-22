@@ -16,7 +16,8 @@ export default function Roadmap() {
                 <div className="roadmap-item w-4/5 block mx-auto absolute" style={{width: '22%', left: '64%', top: '10%', transform: 'translateX(-50%)'}} >
                     <div className="roadmap-details flex relative flex-col">
                         <div className="roadmap-details-header z-20">Q1/2022</div>
-                        <p className="roadmap-line z-20">- Testnet Phase1<br></br>- Testnet Phase2<br></br>- IDO</p>
+                        <p className="roadmap-line z-20">- Testnet Phase1<br></br>- Testnet Phase2<br></br>- IDO <br />
+                        - Build relationships with partners on the BSC </p>
                         <img alt={`Naughty Dragon Roadmap`} className="absolute top-0 left-0 z-10" src="/roadmap/rm2.webp" />
                     </div>
                 </div>
@@ -24,7 +25,7 @@ export default function Roadmap() {
                 <div className="roadmap-item w-4/5 block mx-auto absolute" style={{width: '22%', left: '70%', top: '45%', transform: 'translateX(-50%)'}} >
                     <div className="roadmap-details flex relative flex-col">
                         <div className="roadmap-details-header z-20">Q2/2022</div>
-                        <p className="roadmap-line z-20">- Build Phase3</p>
+                        <p className="roadmap-line z-20">- Build Phase3 <br />- Cooperate with KOLs for project marketing</p>
                         <img alt={`Naughty Dragon Roadmap`} className="absolute top-0 left-0 z-10" src="/roadmap/rm3.webp" />
                     </div>
                 </div>
@@ -40,7 +41,7 @@ export default function Roadmap() {
                 <div className="roadmap-item w-4/5 block mx-auto absolute" style={{width: '22%', left: '65%', top: '78%', transform: 'translateX(-50%)'}} >
                     <div className="roadmap-details flex relative flex-col">
                         <div className="roadmap-details-header z-20">Q4/2022</div>
-                        <p className="roadmap-line z-20">- Planning</p>
+                        <p className="roadmap-line z-20">- Implement cross partners programs with other projects to increase project awareness</p>
                         <img alt={`Naughty Dragon Roadmap`} className="absolute top-0 left-0 z-10" src="/roadmap/rm5.webp" />
                     </div>
                 </div>
