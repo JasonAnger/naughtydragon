@@ -28,9 +28,9 @@ export default function NavigitionBar() {
                 </div>
                 <ul className={`main-nav ${isOpen ? ' active' : ''}`}>
                     <div onClick={() => setIsOpen(false)} className="clickToClose block lg:hidden"></div>
-                    <li onClick={() => setIsOpen(false)} ><a href="#gameplay">Gameplay</a></li>
-                    <li onClick={() => setIsOpen(false)} ><a href="#roadmap">Roadmap</a></li>
-                    <li onClick={() => setIsOpen(false)} ><a href="#partners">Partners</a></li>
+                    <li onClick={() => setIsOpen(false)} ><a href="/#gameplay">Gameplay</a></li>
+                    <li onClick={() => setIsOpen(false)} ><a href="/#roadmap">Roadmap</a></li>
+                    <li onClick={() => setIsOpen(false)} ><a href="/#partners">Partners</a></li>
                     <li className="mini-menu" onClick={() => setIsOpen(false)} >
                         <span>Docs
                             <svg viewBox="0 -256 1792 1792">

@@ -1,23 +1,16 @@
 import Head from "next/head";
 import NavigitionBar from '../components/NavigitionBar'
-import HeadBannerGalaxy from '../components/HeadBannerGalaxy'
-import Gameplay from '../components/Gameplay'
-import DragonTypes from '../components/DragonTypes'
-// import Tokenomics from '../components/Tokenomics'
-import Roadmap from '../components/Roadmap'
-import Partners from '../components/Partners'
 import Footer from '../components/Footer'
-import Marquee from "react-fast-marquee"
+import Home from '../components/Home'
 import React, { useState, useEffect } from 'react';
 
 import './styles/global.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './styles/fonts.css'
 
-// export const config = { amp: true }
-
-export default function App() {
+export default function App({ Component, pageProps }) {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [isHide, setIsHide] = useState(false);
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
@@ -62,16 +55,11 @@ export default function App() {
       <div className={`pointer fixed bottom-3 right-3 sm:bottom-6 sm:right-6 z-50 ${scrollPosition > 100 ? 'flex' : 'hidden'}`} onClick={() => { window.scrollTo(0, 0); }}>
         <img src='/totop.png' width={80} height={80}/>
       </div>
-      <HeadBannerGalaxy />
-      <Gameplay />
-      <DragonTypes />
-      {/* <Tokenomics /> */}
-      <Roadmap />
-      <Partners />
-      <Marquee>
-        Naughty Dragon doesn't provide user supports for residents in the following countries:  Algeria, Bahrain, Djibouti, Egypt, Iran, Iraq, Viet Nam, Zimbabwe, Angola.
-      </Marquee>
-      <div className="marquee-bg"></div>
+      <Component {...pageProps} />
+      <div className={"disclaimer"+`${isHide?' hide':''}`}>
+        <div onClick={() => setIsHide(!isHide)} className={"click"+`${isHide?' hide':''}`}><i className="bi bi-x"></i></div>
+        Naughty Dragon doesn't provide user supports for residents in the following countries: Algeria, Bahrain, Djibouti, Egypt, Iran, Iraq, Viet Nam, Zimbabwe, Angola.
+      </div>
       <Footer />
     </main>
   )
