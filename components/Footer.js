@@ -7,8 +7,8 @@ export default function HeadBanner() {
                 <a className="social-item text" href="#gameplay">Gameplay</a>
                 <a className="social-item text" href="#roadmap">Roadmap</a>
                 <a className="social-item text" target="_blank" href="https://docs.naughtydragon.io/">Docs</a>
-                <a className="social-item text" target="_blank" href="/Tokenomics.pdf">Tokenomics</a>
-                <a className="social-item text" target="_blank" href="/Pitchdeck.pdf">Pitchdeck</a>
+                <a className="social-item text" target="_blank" href="https://naughtydragon.io/Tokenomics.pdf">Tokenomics</a>
+                <a className="social-item text" target="_blank" href="https://naughtydragon.io/Pitchdeck.pdf">Pitchdeck</a>
                 <a className="social-item text" target="_blank" href="https://docs.naughtydragon.io/">FAQs</a>
             </div>
             <div className="social-links">

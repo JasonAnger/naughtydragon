@@ -28,9 +28,9 @@ export default function NavigitionBar() {
                 </div>
                 <ul className={`main-nav ${isOpen ? ' active' : ''}`}>
                     <div onClick={() => setIsOpen(false)} className="clickToClose block lg:hidden"></div>
-                    <li onClick={() => setIsOpen(false)} ><a href="/#gameplay">Gameplay</a></li>
-                    <li onClick={() => setIsOpen(false)} ><a href="/#roadmap">Roadmap</a></li>
-                    <li onClick={() => setIsOpen(false)} ><a href="/#partners">Partners</a></li>
+                    <li onClick={() => setIsOpen(false)} ><a href="https://naughtydragon.io/#gameplay">Gameplay</a></li>
+                    <li onClick={() => setIsOpen(false)} ><a href="https://naughtydragon.io/#roadmap">Roadmap</a></li>
+                    <li onClick={() => setIsOpen(false)} ><a href="https://naughtydragon.io/#partners">Partners</a></li>
                     <li className="mini-menu" onClick={() => setIsOpen(false)} >
                         <span>Docs
                             <svg viewBox="0 -256 1792 1792">
@@ -40,8 +40,8 @@ export default function NavigitionBar() {
                             </svg>
                         </span>
                         <ul className="hover-display">
-                            <li><a target="_blank" href="/Tokenomics.pdf">Tokenomics</a></li>
-                            <li><a target="_blank" href="/Pitchdeck.pdf">Pitchdeck</a></li>
+                            <li><a target="_blank" href="https://naughtydragon.io/Tokenomics.pdf">Tokenomics</a></li>
+                            <li><a target="_blank" href="https://naughtydragon.io/Pitchdeck.pdf">Pitchdeck</a></li>
                             <li><a target="_blank" href="https://docs.naughtydragon.io/">Documentation</a></li>
                         </ul>
                     </li>
