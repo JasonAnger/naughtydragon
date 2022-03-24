@@ -1027,11 +1027,11 @@ h1.section-header{
         align-items: center;
     }
     p.roadmap-line {
-        font-size: 16px;
+        font-size: 13px;
         line-height: 1.4;
-        padding: 0px calc(20vw / 16 * 3.1) 5px calc(20vw / 16 * 3.2);
         height: calc(70vw / 16 * 9);
         display: flex;
+        padding: 5px calc(63vw/ 16 * 2.5) 5px calc(63vw / 16 * 3.2);
     }
     .profit-container>div.flex {
         margin: 65% 0px 0px 0px;
