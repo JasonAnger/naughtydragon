@@ -721,8 +721,11 @@ h1.section-header{
         width: 25%;
         height: 80px;
     }
+    .partner-list .item>span {
+        overflow: visible !important;
+    }
     .partner-list .item  img {
-        filter: drop-shadow(1px 3px 7px #000000b0);
+        filter: drop-shadow(1px 0px 3px #0000003d);
     }
     .partner-list .galaxy.item {
         width: auto;

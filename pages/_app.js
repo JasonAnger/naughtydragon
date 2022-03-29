@@ -53,7 +53,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <NavigitionBar />
       <div className={`pointer fixed bottom-3 right-3 sm:bottom-6 sm:right-6 z-50 ${scrollPosition > 100 ? 'flex' : 'hidden'}`} onClick={() => { window.scrollTo(0, 0); }}>
-        <img src='/totop.png' width={80} height={80}/>
+        <img src='/totop.webp' width={80} height={80}/>
       </div>
       <Component {...pageProps} />
       <div className={"disclaimer"+`${isHide?' hide':''}`}>

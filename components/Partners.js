@@ -1,7 +1,11 @@
+import Image from "next/image"
 export default function Partners() {
-    const urlPartner = ['/partners/logo-01.webp','/partners/logo-02.webp','/partners/logo-03.webp','/partners/logo-04.webp',
-    '/partners/logo-05.webp','/partners/logo-06.webp','/partners/logo-07.webp','/partners/logo-08.webp']
-    const partnerList =  urlPartner.map((item, index) => <div className="item"><img alt={`Naughty Dragon Partner ${index+1}`} className="" src={item} /></div>)
+    const urlPartner = []
+    for(let i = 1; i<17; i++) {
+        if(i<10) urlPartner.push(`/partners/partner-0${i}.webp`)
+        else urlPartner.push(`/partners/partner-${i}.webp`)
+    }
+    const partnerList =  urlPartner.map((item, index) => <div className="item"><Image alt={`Naughty Dragon Partner ${index+1}`} width={200} height={70} src={item} /></div>)
     return (
         <section id="partners">
             <h1 className="section-header">Partners</h1>
