@@ -128,6 +128,10 @@ h1.section-header{
     z-index: 40;
 }
 
+.token-text {
+    font-family: 'Heavitas' !important;
+}
+
 @media screen and (max-width: 1024px){
     h1.section-header {
         margin-top: 30px;
@@ -265,7 +269,7 @@ h1.section-header{
             font-size: 75%;
         }
         a.contract {
-            max-width: calc(100vw - 200px);
+            /* max-width: calc(100vw - 200px); */
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
