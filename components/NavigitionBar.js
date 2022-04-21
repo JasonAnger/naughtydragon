@@ -11,15 +11,15 @@ export default function NavigitionBar() {
         setIsOpen(!isOpen)
     }
     return (
-        <section className={"navbar closed" + `${isClose ? ' closed' : ''}`}>
-            {/* <div onClick={onClickClose} className={"close"+`${isClose?' closed':''}`}><i className="bi bi-x"></i></div> */}
+        <section className={"navbar" + `${isClose ? ' closed' : ''}`}>
+            <div onClick={onClickClose} className={"close"+`${isClose?' closed':''}`}><i className="bi bi-x"></i></div>
             <div className="header-info">
                 <p>
                     <span className='hidden lg:inline-block'>Official Naughty Dragon </span>
                     <span className='inline-block ml-2'>Token Contract</span>
                     <span className='hidden lg:inline-block ml-2'>(BEP-20)</span>
                     <span className='inline-block'>: </span>
-                    <a href="https://bscscan.com/address/0x026e50bc6A2c76447A33bAc90f864d61C94Eb5f0" rel="noreferrer" target="_blank" className="contract">0x026e<span className='hidden lg:inline-block'>50bc6A2c76447A33bAc90f864d61C</span><span className='inline-block lg:hidden'>...</span>94Eb5f0</a>
+                    <a href="https://bscscan.com/address/0x026e50bc6A2c76447A33bAc90f864d61C94Eb5f0" rel="noreferrer" target="_blank" className="contract">0x026e<span className='hidden lg:inline-block'>50bc6A2c76447A33bAc90f864d61C9</span><span className='inline-block lg:hidden'>...</span>4Eb5f0</a>
                 </p>
             </div>
             <div className="nav-main-content">
@@ -45,11 +45,11 @@ export default function NavigitionBar() {
                             <li><a target="_blank" href="https://docs.naughtydragon.io/">Documentation</a></li>
                         </ul>
                     </li>
-                    <a className="button mkt flex lg:hidden relative animate-glow cursor-pointer min-w-max hover:scale-105">
+                    <a href="https://market.testnet.naughtydragon.io/" className="button mkt flex lg:hidden relative animate-glow cursor-pointer min-w-max hover:scale-105">
                         <span>Marketplace</span>
                         <img alt={`Naughty Dragon button`} className="max-h-20" src="btn.webp"></img>
                     </a>
-                    <a className="button flex lg:hidden relative animate-glow cursor-pointer min-w-max hover:scale-105">
+                    <a href="https://play.testnet.naughtydragon.io/" className="button flex lg:hidden relative animate-glow cursor-pointer min-w-max hover:scale-105">
                         <span>Launch App</span>
                         <img alt={`Naughty Dragon button`} className="max-h-20" src="btn.webp"></img>
                     </a>
@@ -58,11 +58,11 @@ export default function NavigitionBar() {
                     <img alt={`Naughty Dragon button`} className="max-h-20" src="burger.webp"></img>
                 </div>
                 <div className="nav-buttons hidden lg:flex">
-                    <a className="button mkt hidden lg:flex relative animate-glow cursor-pointer min-w-max hover:scale-105">
+                    <a href="https://market.testnet.naughtydragon.io/" className="button mkt hidden lg:flex relative animate-glow cursor-pointer min-w-max hover:scale-105">
                         <span>Marketplace</span>
                         <img alt={`Naughty Dragon button`} className="max-h-20" src="btn.webp"></img>
                     </a>
-                    <a className="button hidden lg:flex relative animate-glow cursor-pointer min-w-max hover:scale-105">
+                    <a href="https://play.testnet.naughtydragon.io/" className="button hidden lg:flex relative animate-glow cursor-pointer min-w-max hover:scale-105">
                         <span>Launch App</span>
                         <img alt={`Naughty Dragon button`} className="max-h-20" src="btn.webp"></img>
                     </a>
