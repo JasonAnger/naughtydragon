@@ -56,11 +56,11 @@ export default function NavigitionBar() {
                     <img alt={`Naughty Dragon button`} className="max-h-20" src="burger.webp"></img>
                 </div>
                 <div className="nav-buttons hidden lg:flex">
-                    <a rel="noreferrer" target="_blank" href="https://market.testnet.naughtydragon.io/" className="button mkt hidden lg:flex relative animate-glow cursor-pointer min-w-max hover:scale-105">
+                    <a rel="noreferrer" target="_blank" href="https://market.naughtydragon.io/" className="button mkt hidden lg:flex relative animate-glow cursor-pointer min-w-max hover:scale-105">
                         <span>Marketplace</span>
                         <img alt={`Naughty Dragon button`} className="max-h-20" src="btn.webp"></img>
                     </a>
-                    <a rel="noreferrer" target="_blank" href="https://play.testnet.naughtydragon.io/" className="button hidden lg:flex relative animate-glow cursor-pointer min-w-max hover:scale-105">
+                    <a rel="noreferrer" target="_blank" href="https://play.naughtydragon.io/" className="button hidden lg:flex relative animate-glow cursor-pointer min-w-max hover:scale-105">
                         <span>Launch App</span>
                         <img alt={`Naughty Dragon button`} className="max-h-20" src="btn.webp"></img>
                     </a>
